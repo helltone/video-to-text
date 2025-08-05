@@ -1,0 +1,33 @@
+# Core requirements for QuickTime Speech-to-Text with Speaker Diarization
+# Optimized for Apple Silicon (M1/M2/M3)
+
+# Audio/Video processing - specific compatible versions
+openai-whisper>=20231117
+moviepy>=1.0.3
+librosa>=0.10.1,<0.11.0
+soundfile>=0.12.1
+numba>=0.56.0
+
+# Machine learning and clustering
+scikit-learn>=1.3.0
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+
+# PyTorch with Apple Silicon optimization
+--index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# Core dependencies for audio processing
+ffmpeg-python>=0.2.0
+pydub>=0.25.1
+
+# Optional: Speaker recognition (only install if needed)
+# Uncomment these lines only if you want to use SpeechBrain method:
+# speechbrain>=0.5.15
+# huggingface-hub>=0.16.0
+# pyannote.audio>=3.1.0
+
+# Development and compatibility
+wheel>=0.40.0
+setuptools>=65.0.0

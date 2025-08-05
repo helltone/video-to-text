@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+bin/
+lib/
+pyvenv.cfg
+CACHEDIR.TAG
+share/
+
+# Temporary files
+tmp_*/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
